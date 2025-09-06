@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{% block title %} 
+  Sticky Notes
+  {% if form.instance.pk %} 
+    Update StickyNote
+  {% else %} 
+    Create StickyNote
+  {% endif %} 
+  StickyNote 
+{% endblock %} 
+{% block content %} 
+  <h2> 
+    {% if form.instance.pk %} 
+      Update StickyNote
+    {% else %} 
+      Create StickyNote
+    {% endif %} 
+    StickyNote
+  </h2> 
+  <form method="post"
+        action="{% if form.instance.pk %}{% url 'sticky_update' pk=form.instance.pk %}{% else %}{% url 'sticky_create' %}{% endif %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">
+      Save
+    </button>
+  </form>
+  <a href="{% url 'sticky_list' %}">Back to Sticky List</a> 
+{% endblock %}
