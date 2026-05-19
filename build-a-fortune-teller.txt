@@ -1,0 +1,30 @@
+** start of script.js **
+
+let fortune1 = "Arsenal will win the Premier League."
+let fortune2 = "Arsenal will win the Champions League."
+let fortune3 = "Arsenal will win both the Premier League and the Champions League."
+let fortune4 = "Manchester City will win the Premier League."
+let fortune5 = "PSG will win the champions League."
+
+let randomNumber = Math.round(Math.random() * 5) + 1 
+console.log(randomNumber)
+
+let selectedFortune = ""
+
+if (randomNumber == 1) {
+  (selectedFortune += fortune1);
+} else if (randomNumber == 2) {
+  (selectedFortune += fortune2);
+} else if (randomNumber == 3) {
+  (selectedFortune += fortune3)
+} else if (randomNumber == 4) {
+  (selectedFortune += fortune4)
+} else if (randomNumber == 5) {
+  (selectedFortune += fortune5);
+} else {
+  console.log("No fortune for you buddy")
+}
+console.log(selectedFortune)
+
+** end of script.js **
+
