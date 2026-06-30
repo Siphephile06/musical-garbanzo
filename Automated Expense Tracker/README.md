@@ -33,12 +33,15 @@ Run the tracker:
 
 bash
 python expense_tracker.py
+
 Example: Adding an Expense
 python
 add_expense("2026-06-30", "Food", "Lunch", 80)
+
 Example: Generating a Report
 python
 generate_report()
+
 🌟 Features Overview
 File Handling: Stores expenses in a CSV file (expenses.csv).
 
@@ -60,20 +63,4 @@ Report Scheduling: Adjust the schedule in:
 
 python
 schedule.every().day.at("00:00").do(generate_report)
-📂 Code Structure Overview
-Code
-musical-garbanzo/Automated-Expense-Tracker
-│
-└── expense_tracker.py   # Main script containing all logic
-🤝 Contributing
-Contributions are welcome!
 
-Fork the repository
-
-Create a new branch (git checkout -b feature-name)
-
-Commit your changes (git commit -m "Add feature")
-
-Push to your branch (git push origin feature-name)
-
-Open a Pull Request
