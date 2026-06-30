@@ -28,7 +28,7 @@ bash
 pip install schedule
 Ensure you have Python 3.8+ installed.
 
-🚀 Basic Usage
+## 🚀 Basic Usage
 Run the tracker:
 
 bash
@@ -42,14 +42,14 @@ Example: Generating a Report
 python
 generate_report()
 
-🌟 Features Overview
+## 🌟 Features Overview
 File Handling: Stores expenses in a CSV file (expenses.csv).
 
 Scheduling: Automatically generates monthly reports using the schedule library.
 
 Data Analysis: Summarizes expenses by category and month, with overspending alerts.
 
-🔧 Configuration Options
+## 🔧 Configuration Options
 Spending Limits: Defined in expense_tracker.py under spending_limits:
 
 python
